@@ -78,7 +78,7 @@ h5 {
   color: var(--sf-white);
 }
 
-.carousel-item {
+.carousel-inner {
   background-color: var(--main);
   border-radius: 20px;
   padding: 4rem 3rem;
@@ -198,7 +198,8 @@ h5 {
 }
 
 .event .carousel-inner {
-
+  background-color: white;
+  padding: 0;
 }
 
 .event .carousel-indicator{
@@ -208,8 +209,7 @@ h5 {
 }
 
 .event .carousel-item {
-  background-color: white;
-  padding: 0;
+  
 }
 
 .event .carousel-item img {
@@ -218,6 +218,30 @@ h5 {
 
 .upcoming-event h5 {
   color: var(--st-black);
+}
+
+.event-banner .carousel-control-next, .event-banner .carousel-control-prev {
+  width: 5.5%;
+}
+
+.event-banner .carousel-inner {
+  padding: 3rem;
+}
+
+.event-banner .carousel-item .title {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.event-banner .carousel-item .name {
+  color: var(--sf-white);
+  margin: 1.5rem 0 0 0;
+}
+
+.event-banner .carousel-item .subtitle {
+  color: var(--sf-white);
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 
@@ -279,6 +303,10 @@ h5 {
   .carousel-item .row .order:last-child {
     order: 2;
   }
+
+  .event-banner .carousel-inner {
+    height: 350px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -291,11 +319,8 @@ h5 {
     width: 70%;
   }
 
-  .carousel-item .row .order:first-child {
-    order: 1;
-  }
-  .carousel-item .row .order:last-child {
-    order: 2;
+  .event-banner .carousel-inner {
+    height: 310px;
   }
 }
 
@@ -306,10 +331,7 @@ h5 {
     padding: 2rem;
   }
 
-  .carousel-item .row .order:first-child {
-    order: 1;
-  }
-  .carousel-item .row .order:last-child {
-    order: 2;
+  .event-banner .carousel-inner {
+    height: 270px;
   }
 }
