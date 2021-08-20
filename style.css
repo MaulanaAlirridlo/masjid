@@ -244,6 +244,18 @@ h5 {
   font-size: 0.9rem;
 }
 
+.photo {
+  background-image: linear-gradient(#c6ebba, white);
+  padding: 2rem;
+}
+
+.photo .image-wrapper {
+  height: 290px;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .btn-search {
   cursor: pointer;
