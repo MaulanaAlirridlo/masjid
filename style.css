@@ -21,7 +21,13 @@ h4 {
   color: var(--main);
 }
 
-.btn-show-all {
+h5 {
+  color: var(--main);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.btn-show-details {
   background-color: var(--secondary);
   border: none;
   font-weight: 700;
@@ -30,7 +36,12 @@ h4 {
   float: right;
 }
 
-.btn-show-all:hover {
+.navbar-toggler-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.btn-show-details:hover {
   background-color: var(--main);
   color: var(--secondary);
 }
@@ -48,8 +59,8 @@ h4 {
   color: var(--st-black);
 }
 
-.nav-item, .get-involved, .btn-search, .search-input, .search-action, .submit-search, .carousel-button, .btn-show-all,
-.card-list .title{
+.nav-item, .get-involved, .btn-search, .search-input, .search-action, .submit-search, .carousel-button, .btn-show-details,
+.card-list .title, .event p {
   font-size: 0.8rem;
 }
 
@@ -106,7 +117,7 @@ h4 {
 }
 
 .card-list {
-  flex: 0 0 15%;
+  flex: 0 0 14.87%;
   margin: 10px;
   border: solid 1px var(--sf-white);
   padding: 1rem 0;
@@ -152,12 +163,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-.prayer-times h5 {
-  color: var(--main);
-  font-weight: 600;
-  font-size: .9rem;
-}
-
 .prayer-times span {
   color: var(--orange);
 }
@@ -170,6 +175,51 @@ h4 {
   color: var(--main);
   font-weight: 400;
 }
+
+.event h5, .event p {
+  margin: 0;
+}
+
+.event .date {
+  color: var(--st-black);
+}
+
+.event .day {
+  font-size: 0.9rem;
+}
+
+.event p {
+  color: var(--sf-black);
+}
+
+.event .carousel-indicators {
+  margin: 0;
+  position: relative;
+}
+
+.event .carousel-inner {
+
+}
+
+.event .carousel-indicator{
+  background-color: rgb(184, 184, 184);
+  width: 15px;
+  border-radius: 10px;
+}
+
+.event .carousel-item {
+  background-color: white;
+  padding: 0;
+}
+
+.event .carousel-item img {
+  height: 192px;
+}
+
+.upcoming-event h5 {
+  color: var(--st-black);
+}
+
 
 .btn-search {
   cursor: pointer;
