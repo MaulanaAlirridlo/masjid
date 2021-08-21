@@ -255,6 +255,51 @@ h5 {
   justify-content: center;
 }
 
+.donation-wrapper {
+  background-color: var(--main);
+  padding: 100px;
+}
+
+.donation {
+  max-width: 768px;
+  margin: auto;
+}
+
+.donation h1 {
+  color: white;
+}
+
+.donation p {
+  color: var(--secondary);
+}
+
+.donation button {
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--main);
+  margin-top: 20px;
+}
+
+.subcribe {
+  border-radius: 20px;
+  padding: 50px;
+  top: -50px;
+  position: relative;
+  background-color: white;
+}
+
+.subcribe input {
+  padding: 4px 16px;
+  width: 100%;
+  position: relative;
+}
+
+.subcribe button {
+  position: relative;
+  bottom: 1px;
+  max-width: 86px;
+}
 
 
 .btn-search {
@@ -301,6 +346,15 @@ h5 {
   .search {
     width: 90%;
   }
+
+  .subcribe input {
+    width: 75%;
+    left: 25px;
+  }
+  
+  .subcribe button {
+    left: -25px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -318,6 +372,10 @@ h5 {
 
   .event-banner .carousel-inner {
     height: 350px;
+  }
+
+  .subcribe input {
+    width: 50%;
   }
 }
 
@@ -345,5 +403,9 @@ h5 {
 
   .event-banner .carousel-inner {
     height: 270px;
+  }
+
+  .subcribe input {
+    width: 40%;
   }
 }
