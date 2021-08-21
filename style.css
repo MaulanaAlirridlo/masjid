@@ -1,3 +1,4 @@
+/* css untuk semua element (dipake berkali") */
 :root {
   --main : #136c20;
   --sf-main : #168827;
@@ -36,6 +37,7 @@ h5 {
   float: right;
 }
 
+/* css untuk navbar */
 .navbar-toggler-icon {
   width: 1.3rem;
   height: 1.3rem;
@@ -60,7 +62,7 @@ h5 {
 }
 
 .nav-item, .get-involved, .btn-search, .search-input, .search-action, .submit-search, .carousel-button, .btn-show-details,
-.card-list .title, .event p {
+.card-list .title, .event p, footer p {
   font-size: 0.8rem;
 }
 
@@ -78,6 +80,7 @@ h5 {
   color: var(--sf-white);
 }
 
+/* css untuk semua carousel */
 .carousel-inner {
   background-color: var(--main);
   border-radius: 20px;
@@ -108,6 +111,7 @@ h5 {
   height: 300px;
 }
 
+/* css buat quick link */
 .link-wrapper {
   width: 100%;
   display: flex;
@@ -149,6 +153,7 @@ h5 {
   font-weight: 500;
 }
 
+/* css untuk waktu sholat */
 .prayer-times {
   background-image: url("./images/BDwLWz.png");
   background-size: cover;
@@ -176,6 +181,7 @@ h5 {
   font-weight: 400;
 }
 
+/* css untuk event */
 .event h5, .event p {
   margin: 0;
 }
@@ -192,6 +198,7 @@ h5 {
   color: var(--sf-black);
 }
 
+/* css untuk carousel upcoming event */
 .event .carousel-indicators {
   margin: 0;
   position: relative;
@@ -220,6 +227,7 @@ h5 {
   color: var(--st-black);
 }
 
+/* css untuk carousel bawahnya event */
 .event-banner .carousel-control-next, .event-banner .carousel-control-prev {
   width: 5.5%;
 }
@@ -244,6 +252,7 @@ h5 {
   font-size: 0.9rem;
 }
 
+/* css untuk galeri */
 .photo {
   background-image: linear-gradient(#c6ebba, white);
   padding: 2rem;
@@ -255,6 +264,7 @@ h5 {
   justify-content: center;
 }
 
+/* css untuk bagian donasi */
 .donation-wrapper {
   background-color: var(--main);
   padding: 100px;
@@ -281,6 +291,7 @@ h5 {
   margin-top: 20px;
 }
 
+/* css untuk bagian subcribe */
 .subcribe {
   border-radius: 20px;
   padding: 50px;
@@ -289,7 +300,17 @@ h5 {
   background-color: white;
 }
 
-.subcribe input {
+.subcribe h3 {
+  color: var(--main);
+}
+
+.subcribe p {
+  color: var(--sf-black);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.subcribe input, .message input {
   padding: 4px 16px;
   width: 100%;
   position: relative;
@@ -299,6 +320,52 @@ h5 {
   position: relative;
   bottom: 1px;
   max-width: 86px;
+}
+
+/* css untuk footer */
+footer h4 {
+  font-size: 22px;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: var(--sf-black);
+  font-weight: 600;
+  margin: 0;
+  margin-top: 10px!important;
+}
+
+.contact i {
+  font-size: 1.3rem;
+  bottom: -3px;
+  position: relative;
+}
+
+footer .icon {
+  font-size: 2rem;
+  width: auto;
+  color: var(--sf-black);
+  margin-right: 5px;
+}
+
+.message {
+  position: relative;
+}
+
+.message input {
+  padding: 7px 15px;
+}
+
+.btn-send {
+  float: right;
+  background-color: var(--secondary);
+  color: var(--main);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 20px;
 }
 
 
@@ -341,6 +408,7 @@ h5 {
   text-decoration: underline;
 }
 
+/* css untuk responsive */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .search {
@@ -391,6 +459,13 @@ h5 {
 
   .event-banner .carousel-inner {
     height: 310px;
+  }
+
+  .btn-send {
+    position: absolute;
+    top: -9px;
+    right: 0;
+    width: 120px!important;
   }
 }
 
