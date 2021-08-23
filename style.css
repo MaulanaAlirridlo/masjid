@@ -351,8 +351,25 @@ footer .icon {
   margin-right: 5px;
 }
 
+footer h4 {
+  text-align: center;
+}
+
+footer .contact {
+  justify-content: center;
+}
+
+footer .contact p {
+  width: auto;
+}
+
+footer .menu, footer .menu {
+  text-align: center;
+}
+
 .message {
   position: relative;
+  text-align: center;
 }
 
 .message input {
@@ -360,7 +377,6 @@ footer .icon {
 }
 
 .btn-send {
-  float: right;
   background-color: var(--secondary);
   color: var(--main);
   font-size: 0.9rem;
@@ -423,6 +439,13 @@ footer .icon {
   .subcribe button {
     left: -25px;
   }
+
+  .btn-send {
+    position: absolute;
+    top: -9px;
+    right: 0;
+    width: 120px!important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -445,6 +468,14 @@ footer .icon {
   .subcribe input {
     width: 50%;
   }
+
+  footer h4, footer .menu, .message {
+    text-align: left;
+  }
+
+  footer .contact p {
+    width: 100%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -459,13 +490,6 @@ footer .icon {
 
   .event-banner .carousel-inner {
     height: 310px;
-  }
-
-  .btn-send {
-    position: absolute;
-    top: -9px;
-    right: 0;
-    width: 120px!important;
   }
 }
 
